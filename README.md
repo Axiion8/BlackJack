@@ -1,45 +1,20 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9905501&assignment_repo_type=AssignmentRepo)
- > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
- > Prompt text is any lines beginning with "\>"
- > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
-# \<Blackjack\>
- > Authors: \<[Anderson Wu (anderthenoob)](https://github.com/anderthenoob)\>
-            \<[Casey Le (Axiion8)](https://github.com/Axiion8)\>
-            \<[Justin Le (anj501)](https://github.com/anj501)\>
-            \<[Kyle Taing (KyleTaing)](https://github.com/KyleTaing)\>
 
- > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list and start thinking about the features you will implement. If you want to propose your own original idea, you will have to contact your instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings.
-
- > ## Expectations
- > * The backend of your project should be implemented in C++. If you wish to choose anoher programming language (e.g. Java, Python), please discuss with your lab TA to obtain permission.
- > * You can incorporate additional technologies/tools but they must be approved (in writing) by the instructor or the TA.
- > * Each member of the group **must** be committing code regularly and make sure their code is correctly attributed to them. We will be checking attributions to determine if there was equal contribution to the project.
- > * **Each member of the group must actively participate in the Github Project board, writing unit tests, and reviewing commited code.**
-> * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold two to three scrum/check-in meetings with your lab TA/reader at different times in addition to the final demo.
+# Blackjack
+ > Authors: [Anderson Wu (anderthenoob)](https://github.com/anderthenoob),
+            [Casey Le (Axiion8)](https://github.com/Axiion8),
+            [Justin Le (anj501)](https://github.com/anj501),
+            [Kyle Taing (KyleTaing)](https://github.com/KyleTaing),
 
 ## Project Description
- > Your project description should summarize the project you are proposing. Be sure to include:
- > * Why is it important or interesting to you?
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- > * What will be the input/output of your project?
- > * What are the features that the project provides?
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
-
- > When deciding on our project, we wanted to make a project that could be enjoyed over a long period of time as well as making a project that was easy to understand or already well known in terms of rules and how it's played. That's how we decided on making a blackjack project in order to fulfill those goals we had in mind. We're going to be using C++ for our project. This blackjack game includes a stack of cards without the 2 joker cards. You are given an amount of credits and if the your credits gets to 0 you are unable to play. The dealer is going to pass out 2 cards to itself (only revealing 1 card) and 2 cards to the player. After seeing the 2 cards, the player is going to have the options to hit (takes another card from the card stack), stand (take no more cards), double down (double the wager, take one more card and stand), split (this option is only avalable if the inital 2 cards given to you are the same value; split your 2 initial cards into 2 hands doubling your wager), and surrender (give up half of the bet and give up the hand).
+ > When deciding on our project, we wanted to make a project that could be enjoyed over a long period of time as well as making a project that was easy to understand or already well known in terms of rules and how it's played. That's how we decided on making a blackjack project in order to fulfill those goals we had in mind. We're going to be using C++ for our project. This blackjack game includes a stack of cards without the 2 joker cards. You are given an amount of credits and if the your credits gets to 0 you are unable to play. The dealer is going to pass out 2 cards to itself (only revealing 1 card) and 2 cards to the player. After seeing the 2 cards, the player is going to have the options to hit (takes another card from the card stack), stand (take no more cards), double down (double the wager, take one more card and stand), split (this option is only avalable if the inital 2 cards given to you are the same value; split your 2 initial cards into 2 hands doubling your wager), and surrender (give up half of the bet and give up the hand). The project is expected to output the status of the blackjack game which includes, the player's hand, the dealer's hand, with the addition to different playstyle options mentioned before.
  > 
  > ## Phase II
- > In addition to completing the "Class Diagram" section below, you will need to:
- > * Create an "Epic" (note) for each feature. Place these epics in the `Product Backlog` column
- > * Complete your first *sprint planning* meeting to plan out the next 7 days of work.
- >   * Break down the "Epics" into smaller actionable user stories (i.e. smaller development tasks). Convert them into issues and assign them to team members. Place these in the `TODO` column.
- >   * These cards should represent roughly 7 days worth of development time for your team. Then, once the sprint is over you should be repeating these steps to plan a new sprint, taking you until your second scrum meeting with the reader in phase III.
- > * Schedule two check-ins using Calendly. You need to pick both time slots during your lab on week 6. Your entire team must be present for both check-ins.
- >   * The first check-in needs to be scheduled with your lab TA. During that meeting, you will discuss your project design/class diagram from phase II.
- >   * The second check-in should be scheduled with a reader. During that meeting you will discuss:
- >     * The tasks you are planning for the first sprint
- >     * How work will be divided between the team members
+ > In our project, everything will be reliant on the card class. The card class holds the value of each card, its respective suit, and the card's name. The deck class will store all our card objects in a vector which will be distributed to a player's hand. In the hand function, there will be functions that check if the hand's value will bust or count as a blackjack—while also has functions that manipulate the cards in the chosen hand, so drawing, viewing, and discarding the hand after the round is over. The player and dealer class will depend on the hand class, as most of their functions will be used to manipulate the hand. This means hitting, standing, and splitting the hand. The player class will additionally have the option to see their name, how much money they currently have, how much they want to bet, and the additional options to double down or surrender during the round.
+
 ## Class Diagram
- > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
+ > ![image](https://user-images.githubusercontent.com/84153224/218648136-7c391936-e96d-4a89-9c64-301090ace5fd.png)
+
  
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
