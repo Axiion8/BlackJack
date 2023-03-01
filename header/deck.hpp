@@ -1,17 +1,17 @@
 #ifndef DECK_HPP
 #define DECK_HPP
 
-#include "card.hpp"
+#include "card.hpp" //for deck()
 #include <vector>
+#include <string>
+#include <algorithm> //for shuffleDeck()
 
 class deck{
-    private:
-        vector<card> deck;
     public:
+        vector<card> deck;
         deck(); //generate the deck
-        void generateDeck();
+        void generateDeck();//deck() helper function
         void shuffleDeck();
-        card drawCardDeck();
 };
 
 #endif
