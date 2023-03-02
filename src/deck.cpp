@@ -12,23 +12,22 @@ void deck::generateDeck(){
         string cardSuit = "";//if statements to see what suit will be generated next
 
         if(i == 0){
-            cardSuit = "clubs";
+            cardSuit = "Clubs";
         }
         else if(i == 1){
-            cardSuit = "diamonds";
+            cardSuit = "Diamonds";
         }
         else if(i == 2){
-            cardSuit = "hearts";
+            cardSuit = "Hearts";
         }
         else if(i == 3){
-            cardSuit = "spades";
+            cardSuit = "Spades";
         }
         else{ //incase i iteration somehow goes over 4
             cout << "cardSuit iteration error, variable i > 4";
         }
 
-
-        for(unsigned int j = 1; j < 14; ++i){//nested for loop to generate every card per suit
+        for(unsigned int j = 1; j < 14; ++j){//nested for loop to generate every card per suit
             
             string cardName = "";//if statements to see what card will be generated next
 
@@ -76,18 +75,18 @@ void deck::generateDeck(){
             }
 
             if(j == 1){
-                deck.push(new card(11, cardName, cardSuit));
+                deckV.push_back(new card(11, cardName, cardSuit));
             }
             else if(1 < j <=10){
-                deck.push_back(new card(j, cardName, cardSuit));
+                deckV.push_back(new card(j, cardName, cardSuit));
             }
             else if(10 < j <= 13){
-                deck.push_back(new card(10, cardName, cardSuit));
+                deckV.push_back(new card(10, cardName, cardSuit));
             }
         }
-    }
+    } 
 }
 
 void deck::shuffleDeck(){
-    random_shuffle(this->deck.begin(), this->deck.end())
+    random_shuffle(this->deckV.begin(), this->deckV.end());
 }
