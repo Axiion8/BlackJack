@@ -47,7 +47,7 @@
  > * void surrender() give up half of the bet and lose game
 
 ## Class Diagram
- > ![uml](https://user-images.githubusercontent.com/110501128/222855953-8d3be183-699c-4653-875d-b70c177b861c.png)
+ > ![uml](https://user-images.githubusercontent.com/110501128/222856648-8de8d71b-d211-432f-b11d-1517cb55bf24.png)
 
  
  > ## Phase III
