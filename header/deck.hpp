@@ -2,13 +2,14 @@
 #define DECK_HPP
 
 #include "card.hpp" //for deck()
+#include <iostream>
 #include <vector>
 #include <string>
 #include <algorithm> //for shuffleDeck()
 
 class deck{
     public:
-        vector<card> deck;
+        vector<card*> deckV;
         deck(); //generate the deck
         void generateDeck();//deck() helper function
         void shuffleDeck();
