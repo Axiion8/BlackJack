@@ -28,10 +28,10 @@
  > * checkJackHand() returns true if hadnValue is equals to 21 
  > * getValueHand() returns handValue
  > * drawCardHand() calls drawCardDeck() from deck class (adds a card from deck to hand)
- > * viewHand() (N/A)
+ > * viewHand() let player see his cards
  > * clearHand() clears the Hand<>
  > Dealer Class:
- > * dealerDraw() (N/A)
+ > * dealerDraw() calls drawCardHand()
  > Player Class:
  > * getName() sets name
  > * viewMoney() returns money
