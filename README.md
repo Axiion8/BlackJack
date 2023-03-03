@@ -17,24 +17,7 @@
 
  
  > ## Phase III
- > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
- 
- > BEFORE the meeting you should do the following:
- > * Update your class diagram from Phase II to include any feedback you received from your TA/grader.
- > * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
- >   * A new class diagram incorporating your changes after considering the SOLID principles.
- >   * For each update in your class diagram, you must explain in 3-4 sentences:
- >     * What SOLID principle(s) did you apply?
- >     * How did you apply it? i.e. describe the change.
- >     * How did this change help you write better code?
- > * Perform a new sprint plan like you did in Phase II.
- > * You should also make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history.
- 
-> During the meeting with your reader you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- > * What tasks you are planning for this next sprint.
+ > After looking at our class diagram, we applied SOLID principles to make the project more concise and manageable. We applied Single Responsibility Principle (SRP) and Open-Closed Principle (OCP) to our class diagram. We first used SRP for the Card class to represent the playing card. The change was for the card class to be separate from the deck class where the Card class would be able to set and get the suit and value of the card. This allows the Card class to be independent of the Deck class where it's more flexible and functional. The SRP helped us make our code more organized and have a single purpose for the Card class. Next we applied another SRP, to our Hand Class which represents management of your hand. We applied this principle by having the Hand Class only have functionality for the player’s hand and doesn’t do anything else. This change of adding the Hand Class helped with only having one purpose to the class and not having it so disorganized. Finally, we applied the OCP where we have the Deck class and don’t need to modify the Card class if we wanted to add features to the Deck class. Since incorporating the Deck Class we don’t have to change the existing functions and are able to add more functions without changing the existing code. The OCP helps with managing new functions and we don’t have to worry about changing existing code in order to implement new functions to the class. 
 
  
  > ## Final deliverable
