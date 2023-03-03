@@ -53,7 +53,7 @@
  > ## Phase III
  > After looking at our class diagram, we applied SOLID principles to make the project more concise and manageable. We applied Single Responsibility Principle (SRP) and Open-Closed Principle (OCP) to our class diagram. We first used SRP for the Card class to represent the playing card. The change was for the card class to be separate from the deck class where the Card class would be able to set and get the suit and value of the card. This allows the Card class to be independent of the Deck class where it's more flexible and functional. The SRP helped us make our code more organized and have a single purpose for the Card class. Next we applied another SRP, to our Hand Class which represents management of your hand. We applied this principle by having the Hand Class only have functionality for the player’s hand and doesn’t do anything else. This change of adding the Hand Class helped with only having one purpose to the class and not having it so disorganized. Finally, we applied the OCP where we have the Deck class and don’t need to modify the Card class if we wanted to add features to the Deck class. Since incorporating the Deck Class we don’t have to change the existing functions and are able to add more functions without changing the existing code. The OCP helps with managing new functions and we don’t have to worry about changing existing code in order to implement new functions to the class. 
  > ## New Class Diagram
- > ![newuml](https://user-images.githubusercontent.com/110501128/222846844-a4f08acb-28f8-4927-a7ee-718db08c8ce7.png)
+ > ![newuml](https://user-images.githubusercontent.com/110501128/222856040-854324e9-bd44-4da4-a816-7ca9daf0b8fa.png)
 
  
  > ## Final deliverable
