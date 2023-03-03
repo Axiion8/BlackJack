@@ -19,6 +19,7 @@
  > * getValue() returns the cardValue
  > * getName() returns the name
  > * getSuit() returns the suit
+ > 
  > Deck Class:
  > * generateDeck() generates a vector with 52 Card object
  > * shuffleDeck() mixes up order the of the vector
