@@ -13,35 +13,38 @@
  > In our project, everything will be reliant on the card class. The card class holds the value of each card, its respective suit, and the card's name. The deck class will store all our card objects in a vector which will be distributed to a player's hand. In the hand function, there will be functions that check if the hand's value will bust or count as a blackjack—while also has functions that manipulate the cards in the chosen hand, so drawing, viewing, and discarding the hand after the round is over. The player and dealer class will depend on the hand class, as most of their functions will be used to manipulate the hand. This means hitting, standing, and splitting the hand. The player class will additionally have the option to see their name, how much money they currently have, how much they want to bet, and the additional options to double down or surrender during the round.
 
  > Card Class:
- > * setValue(int) sets cardValue
- > * setName(string) sets name
- > * setSuit(string) sets suit
- > * getValue() returns the cardValue
- > * getName() returns the name
- > * getSuit() returns the suit
+ > * void setValue(int) sets cardValue
+ > * void setName(string) sets name
+ > * void setSuit(string) sets suit
+ > * int getValue() returns the cardValue
+ > * string getName() returns the name
+ > * string getSuit() returns the suit
  > 
  > Deck Class:
- > * generateDeck() generates a vector with 52 Card object
- > * shuffleDeck() mixes up order the of the vector
- > * drawCardDeck() returns a deleted Card object from the vector
+ > * void generateDeck() generates a vector with 52 Card object
+ > * void shuffleDeck() mixes up order the of the vector
+ > 
  > Hand Class:
- > * checkBustHand() returns true if handValue is larger than 21
- > * checkJackHand() returns true if hadnValue is equals to 21 
- > * getValueHand() returns handValue
- > * drawCardHand() calls drawCardDeck() from deck class (adds a card from deck to hand)
- > * viewHand() let player see his cards
- > * clearHand() clears the Hand<>
+ > * bool checkBustHand() returns true if handValue is larger than 21
+ > * bool checkJackHand() returns true if hadnValue is equals to 21 
+ > * int getValueHand() returns handValue
+ > * void drawCardHand() prints out what card the user draws
+ > * string viewHand() let player see his cards
+ > * void clearHand() clears the Hand<>
+ > 
  > Dealer Class:
- > * dealerDraw() calls drawCardHand()
+ > * void dealerDraw() calls drawCardHand()
+ > 
  > Player Class:
- > * getName() sets name
- > * viewMoney() returns money
- > * howManyHands() returns the number of hands
- > * hit() calls drawCardHand()
- > * stand() ends round, dealer's turn
- > * doubleDown() double the bet, hit once and stand
- > * splitHands() creates one more hand
- > * surrender() give up half of the bet and lose game
+ > * string getName() sets name
+ > * int viewMoney() returns money
+ > * int howManyHands() returns the number of hands
+ > * void wonBet() doubles the bet and return's it to the player's money integer
+ > * void hit() calls drawCardHand()
+ > * void stand() ends round, dealer's turn
+ > * void doubleDown() double the bet, hit once and stand
+ > * void splitHands() creates one more hand
+ > * void surrender() give up half of the bet and lose game
 
 ## Class Diagram
  > ![image](https://user-images.githubusercontent.com/84153224/218648136-7c391936-e96d-4a89-9c64-301090ace5fd.png)
