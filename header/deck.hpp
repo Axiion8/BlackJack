@@ -11,8 +11,11 @@ class deck{
     public:
         vector<card*> deckV;
         deck(); //generate the deck
+        ~deck();
         void generateDeck();//deck() helper function
         void shuffleDeck();
+        card* drawCard();
+        bool isEmpty()const;
 };
 
 #endif
