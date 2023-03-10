@@ -77,10 +77,10 @@ void deck::generateDeck(){
             if(j == 1){
                 deckV.push_back(new card(11, cardName, cardSuit));
             }
-            else if(1 < j <=10){
+            else if(1 < j && j <=10){
                 deckV.push_back(new card(j, cardName, cardSuit));
             }
-            else if(10 < j <= 13){
+            else if(10 < j && j <= 13){
                 deckV.push_back(new card(10, cardName, cardSuit));
             }
         }
@@ -89,4 +89,27 @@ void deck::generateDeck(){
 
 void deck::shuffleDeck(){
     random_shuffle(this->deckV.begin(), this->deckV.end());
+}
+
+deck::~deck() {
+    // Delete each card object in the deck vector
+    for (auto& cardPtr : deckV) {
+        delete cardPtr;
+        cardPtr = nullptr;
+    }
+}
+
+card* deck::drawCard(){
+    if (isEmpty()) {
+        // handle empty deck
+        return nullptr;
+    }
+    card* temp;
+    temp = deckV.back();
+    deckV.pop_back();
+    return temp;
+}
+
+bool deck::isEmpty() const{
+    return deckV.empty();
 }
