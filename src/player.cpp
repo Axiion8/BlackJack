@@ -14,6 +14,8 @@ string player::getName(){
 
 int player::viewMoney(){
 
+
+    return money;
 }
 
 int player::numHands(){
