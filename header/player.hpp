@@ -16,6 +16,7 @@ class player{
         vector<hand*> handV;
 
         player();
+        player(string);
         ~player();
 
         string getName();
