@@ -40,13 +40,11 @@ int player::numHands(){
 }
 
 void player::wonBet(){
-    for (auto& hand: handV){
-        
-    }
+    //for (auto& hand: handV){}
 }
 
 void player::hit(){
-    currentHand->drawCardHand(drawCard());
+    //currentHand->drawCardHand(drawCard());
 }
 
 void player::stand(){
