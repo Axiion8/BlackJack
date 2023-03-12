@@ -36,7 +36,7 @@
  > * void dealerDraw() calls drawCardHand()
  > 
  > Player Class:
- > * string getName() sets name
+ > * string getName() returns name
  > * int viewMoney() returns money
  > * int howManyHands() returns the number of hands
  > * void wonBet() doubles the bet and return's it to the player's money integer
