@@ -4,12 +4,14 @@ card::card(){
     this->cardValue = 0;
     this->cardName = "default";
     this->cardSuit = "default";
+    this->cardAce = false;
 }
 
-card::card(int inValue, string inName, string inSuit){
+card::card(int inValue, string inName, string inSuit, bool aceCheck){
     this->cardValue = inValue;
     this->cardName = inName;
     this->cardSuit = inSuit;
+    this->cardAce = aceCheck;
 }
 
 void card::setValue(int input){
@@ -34,4 +36,8 @@ string card::getName(){
 
 string card::getSuit(){
     return this->cardSuit;
+}
+
+bool card::getAce(){
+    return cardAce;
 }
