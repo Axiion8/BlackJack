@@ -14,6 +14,7 @@ class player{
         string name;
         int money;
         vector<hand*> handV;
+        hand* currentHand;
 
         player();
         player(string);
