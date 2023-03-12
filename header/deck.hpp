@@ -15,6 +15,7 @@ class deck{
         void generateDeck();//deck() helper function
         void shuffleDeck();
         card* drawCard();
+        void returnCard(card*);
         bool isEmpty()const;
 };
 

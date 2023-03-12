@@ -7,7 +7,7 @@ TEST(cardTest1, testConstructor1){
 }
 
 TEST(cardTest2, testConstructor2){
-    EXPECT_NO_THROW(card *cardPTR = new card(3214, "Ace", "Spade"));
+    EXPECT_NO_THROW(card *cardPTR = new card(3214, "Ace", "Spade", false));
 }
 
 TEST(cardTest3, test_setValue_and_getValue){

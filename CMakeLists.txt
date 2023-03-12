@@ -26,6 +26,17 @@ add_executable(deckTest
     test/deckTest.cpp
 )
 
+add_executable(handTest
+    header/deck.hpp
+    header/card.hpp
+    header/hand.hpp
+    src/card.cpp
+    src/deck.cpp
+    src/hand.cpp
+    test/handTest.cpp
+)
+
 #links
 target_link_libraries(cardTest gmock gtest gtest_main)
 target_link_libraries(deckTest gmock gtest gtest_main)
+target_link_libraries(handTest gmock gtest gtest_main)
