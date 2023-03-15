@@ -1,11 +1,14 @@
 #include "../header/dealer.hpp"
 
 dealer::dealer() {
-    dealerHand.handValue = 0;
-    dealerHand.aceHand = false;
-    dealerHand.numAces = 0;
-    dealerHand.bet = 0;
+    dealerHandValue = 0;
 }
-void dealer::dealerDraw() {
-    dealerHand.drawCardHand();
+
+dealer::~dealer() {
+    dealerHand.~hand();
+    dealerHandValue = 0;
+}
+
+void dealer::dealerDraw(card *iCard) {
+    dealerHand.drawCardHand(iCard);
 }

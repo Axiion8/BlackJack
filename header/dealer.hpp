@@ -2,14 +2,18 @@
 #define DEALER_HPP
 
 #include "hand.hpp"
+#include "card.hpp"
 #include <string>
+#include <vector>
 
 class dealer {
     private:
-    Hand dealerHand;
+    hand dealerHand;
+    int dealerHandValue;
 
     public:
-    void dealerDraw();
+    dealer();
+    void dealerDraw(card* iCard);
 
 };
 
