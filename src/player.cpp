@@ -43,22 +43,26 @@ void player::wonBet(){
     //for (auto& hand: handV){}
 }
 
-void player::hit(){
-    //currentHand->drawCardHand(drawCard());
+void player::hit(deck* input){
+    card* newCard = input->drawCard();
+    currentHand->drawCardHand(newCard);
 }
 
 void player::stand(){
-
+//do nothing
 }
 
 void player::doubleDown(){
-
+// this->bet = this->bet * 2;
+// currentHand->drawCardHand(drawCard());
+//stand 
 }
 
 void player::split(){
-
 }
 
 void player::surrender(){
-
+// int surrenderBet = this->bet;
+// this->bet = surrenderBet / 2;
+//next round
 }

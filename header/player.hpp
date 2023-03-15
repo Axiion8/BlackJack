@@ -10,12 +10,12 @@
 #include <algorithm>
 
 class player{
-    public:
+    private:
         string name;
         int money;
         vector<hand*> handV;
         hand* currentHand;
-
+    public:
         player();
         player(string);
         ~player();
@@ -25,12 +25,13 @@ class player{
         int numHands();
         void wonBet();
 
-        void hit();
+        void hit(deck*);
         void stand();
         void doubleDown();
         void split();
         void surrender();
+       
 
-}
+};
 
 #endif

@@ -86,5 +86,5 @@ bool hand::isEmpty(){
 }
 
 bool hand::isAceHand(){
-    return bet;
+    return aceHand;
 }
