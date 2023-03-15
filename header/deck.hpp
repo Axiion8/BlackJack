@@ -8,8 +8,9 @@
 #include <algorithm> //for shuffleDeck()
 
 class deck{
+    private:
+        vector<card*> deckV;    
     public:
-        vector<card*> deckV;
         deck(); //generate the deck
         ~deck();
         void generateDeck();//deck() helper function

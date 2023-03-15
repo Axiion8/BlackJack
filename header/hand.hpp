@@ -6,13 +6,14 @@
 #include <string>
 
 class hand{
+    private:
+    vector<card*>handV;
+    int handValue;
+    bool aceHand;
+    int numAces;
+    int bet;
+    
     public:
-        vector<card*>handV;
-        int handValue;
-        bool aceHand;
-        int numAces;
-        int bet;
-
         hand();
         ~hand();
 
