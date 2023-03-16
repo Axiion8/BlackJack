@@ -6,7 +6,6 @@ using namespace std;
 player::player(){
     this->name = "Player 1";
     this->money = 100;
-    handV.push_back(new hand());
     this->bet = 0;
     this->currentHand = new hand();
 }
@@ -14,18 +13,6 @@ player::player(){
 player::player(string n){
     this->name = n;
     this->money = 100;
-    handV.push_back(new hand());
-}
-
-player::~player(){
-    //deletes all the hands in the hand vector
-    for (auto& hand : handV) {
-        delete hand;
-        hand = nullptr;
-    }
-
-    //currentHand = nullptr;
-}
     this->bet = 0;
     this->currentHand = new hand();
 }
@@ -57,7 +44,8 @@ void player::placeBet(int amount){
 }
 
 void player::hit(deck* input){
-    
+    card* newCard = input->drawCard();
+    currentHand->drawCardHand(newCard);
 }
 
 void player::stand(){
@@ -72,9 +60,7 @@ currentHand->drawCardHand(newCard);
 //stand 
 }
 
-void player::surrender(){
 /*void player::split(){
-
 }*/
 
 /*void player::surrender(){
@@ -83,8 +69,8 @@ void player::surrender(){
 //next round
 }*/
 
-void player::output(){
-    cout << "Your cards in " << currentHand->viewHand();
-    cout << "Your total value is: " << currentHand->getValueHand() << endl;
-    cout << "You are betting: " << this->bet << endl;
-}
+// void player::output(){
+//     cout << "Your cards in " << currentHand->viewHand();
+//     cout << "Your total value is: " << currentHand->getValueHand() << endl;
+//     cout << "You are betting: " << this->bet << endl;
+// }

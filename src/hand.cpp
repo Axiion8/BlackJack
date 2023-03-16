@@ -26,8 +26,6 @@ bool hand::checkJackHand() {
     return (this->getValueHand() == 21);
 }
 
-<<<<<<< HEAD
-=======
 /*void hand::setBet(int input){
     this->bet = input;
 }
@@ -36,7 +34,6 @@ int hand::wonBet(){
     return 2*bet;
 }*/
 
->>>>>>> 4f4c61169b5626b6584df6b1c1c1068ad8724a3d
 int hand::getValueHand() {
     int value = 0;
     int numAces = 0;
