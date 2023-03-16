@@ -61,7 +61,6 @@ currentHand->drawCardHand(newCard);
 }
 
 /*void player::split(){
-
 }*/
 
 /*void player::surrender(){
@@ -70,8 +69,8 @@ currentHand->drawCardHand(newCard);
 //next round
 }*/
 
-void player::output(){
-    cout << "Your cards in " << currentHand->viewHand();
-    cout << "Your total value is: " << currentHand->getValueHand() << endl;
-    cout << "You are betting: " << this->bet << endl;
-}
+// void player::output(){
+//     cout << "Your cards in " << currentHand->viewHand();
+//     cout << "Your total value is: " << currentHand->getValueHand() << endl;
+//     cout << "You are betting: " << this->bet << endl;
+// }

@@ -29,6 +29,7 @@ class hand{
         void clearHand(deck*);
         bool isEmpty();
         bool isAceHand();
+
 };
 
 #endif

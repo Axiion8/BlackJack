@@ -13,6 +13,7 @@ class dealer {
 
     public:
     dealer();
+    ~dealer();
     void dealerDraw(card* iCard);
 
 };
