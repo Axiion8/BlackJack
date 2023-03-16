@@ -20,15 +20,13 @@ class hand{
         bool checkBustHand();
         bool checkJackHand();
 
-        void setBet(int);
-        int wonBet();
-
         int getValueHand();
         void drawCardHand(card*);
         void viewHand();
         void clearHand(deck*);
         bool isEmpty();
         bool isAceHand();
+
 };
 
 #endif
