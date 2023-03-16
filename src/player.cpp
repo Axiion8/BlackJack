@@ -7,14 +7,12 @@ player::player(){
     this->name = "Player 1";
     this->money = 100;
     handV.push_back(new hand());
-    currentHand = handV[0];
 }
 
 player::player(string n){
     this->name = n;
     this->money = 100;
     handV.push_back(new hand());
-    currentHand = handV[0];
 }
 
 player::~player(){
@@ -24,7 +22,7 @@ player::~player(){
         hand = nullptr;
     }
 
-    currentHand = nullptr;
+    //currentHand = nullptr;
 }
 
 string player::getName(){
@@ -44,8 +42,7 @@ void player::wonBet(){
 }
 
 void player::hit(deck* input){
-    card* newCard = input->drawCard();
-    currentHand->drawCardHand(newCard);
+    
 }
 
 void player::stand(){
@@ -56,9 +53,6 @@ void player::doubleDown(){
 // this->bet = this->bet * 2;
 // currentHand->drawCardHand(drawCard());
 //stand 
-}
-
-void player::split(){
 }
 
 void player::surrender(){

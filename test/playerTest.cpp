@@ -20,5 +20,4 @@ TEST(playerTest, playerConstructorHand){
     EXPECT_THAT(playerHand, 1);
 }
 TEST(playerTest, playerHit){
-
 }
