@@ -4,7 +4,7 @@ hand::hand(){
     this->handValue = 0;
     this->aceHand = false;
     this->numAces = 0;
-    this->bet = 0;
+    //this->bet = 0;
 }
 
 hand::~hand(){
@@ -26,13 +26,13 @@ bool hand::checkJackHand() {
     return (this->getValueHand() == 21);
 }
 
-void hand::setBet(int input){
+/*void hand::setBet(int input){
     this->bet = input;
 }
 
 int hand::wonBet(){
     return 2*bet;
-}
+}*/
 
 int hand::getValueHand() {
     int value = 0;

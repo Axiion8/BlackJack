@@ -13,7 +13,7 @@ class player{
     private:
         string name;
         int money;
-        vector<hand*> handV;
+        int bet;
         hand* currentHand;
     public:
         player();
@@ -24,14 +24,13 @@ class player{
         int viewMoney();
         int numHands();
         void wonBet();
+        void placeBet(int);
 
         void hit(deck*);
         void stand();
-        void doubleDown();
-        void split();
-        void surrender();
-       
-
+        void doubleDown(deck*);
+        //void split();
+        //void surrender();
 };
 
 #endif
