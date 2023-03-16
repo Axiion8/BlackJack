@@ -6,12 +6,14 @@ using namespace std;
 player::player(){
     this->name = "Player 1";
     this->money = 100;
+    this->bet = 0;
     this->currentHand = new hand();
 }
 
 player::player(string n){
     this->name = n;
     this->money = 100;
+    this->bet = 0;
     this->currentHand = new hand();
 }
 
@@ -67,3 +69,9 @@ currentHand->drawCardHand(newCard);
 // this->bet = surrenderBet / 2;
 //next round
 }*/
+
+void player::output(){
+    cout << "Your cards in " << currentHand->viewHand();
+    cout << "Your total value is: " << currentHand->getValueHand() << endl;
+    cout << "You are betting: " << this->bet << endl;
+}
