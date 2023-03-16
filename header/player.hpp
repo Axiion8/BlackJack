@@ -31,6 +31,8 @@ class player{
         void doubleDown(deck*);
         //void split();
         //void surrender();
+
+        void output();
 };
 
 #endif
