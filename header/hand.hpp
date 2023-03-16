@@ -11,7 +11,7 @@ class hand{
     int handValue;
     bool aceHand;
     int numAces;
-    int bet;
+    //int bet;
     
     public:
         hand();
@@ -20,8 +20,8 @@ class hand{
         bool checkBustHand();
         bool checkJackHand();
 
-        void setBet(int);
-        int wonBet();
+        //void setBet(int);
+        //int wonBet();
 
         int getValueHand();
         void drawCardHand(card*);
