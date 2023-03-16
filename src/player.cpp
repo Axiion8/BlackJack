@@ -15,15 +15,9 @@ player::player(string n){
     this->currentHand = new hand();
 }
 
-player::~player(){
-    //deletes all the hands in the hand vector
-    for (auto& hand : handV) {
-        delete hand;
-        hand = nullptr;
-    }
-
+/*player::~player(){
     currentHand = nullptr;
-}
+}*/
 
 string player::getName(){
     return this->name;
@@ -33,9 +27,9 @@ int player::viewMoney(){
     return this->money;
 }
 
-int player::numHands(){
+/*int player::numHands(){
     return handV.size();
-}
+}*/
 
 void player::wonBet(){
     this->money = this->bet*2;
@@ -49,7 +43,7 @@ void player::placeBet(int amount){
 
 void player::hit(deck* input){
     card* newCard = input->drawCard();
-    currentHand = drawCardHand(newCard);
+    currentHand->drawCardHand(newCard);
 }
 
 void player::stand(){
@@ -57,9 +51,9 @@ void player::stand(){
 }
 
 void player::doubleDown(deck* input){
-this->placeBet(bet * 2)
+this->placeBet(bet * 2);
 card* newCard = input->drawCard();
-currentHand = drawCardHand(newCard);
+currentHand->drawCardHand(newCard);
 // currentHand->drawCardHand(drawCard());
 //stand 
 }
