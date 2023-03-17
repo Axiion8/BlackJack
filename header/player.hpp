@@ -30,6 +30,7 @@ class player{
         void hit(deck*);
         void stand();
         void doubleDown(deck*);
+        void drawBet();
         //void split();
         //void surrender();
         hand* getCurrentHand();
