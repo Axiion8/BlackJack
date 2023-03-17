@@ -18,3 +18,11 @@ int dealer::getDealerHandValue(){
 void dealer::dealerDraw(card *iCard) {
     dealerHand.drawCardHand(iCard);
 }
+
+void dealerViewHand() {
+    unsigned int i;
+    for (i = 0; i < dealerHand.handV; ++i) {
+        cout << "Your cards in " << dealerHand.handV->viewHand();
+        cout << "Your total value is: " << dealerHand.handV->getValueHand() << endl;
+    }
+}
