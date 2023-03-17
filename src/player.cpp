@@ -20,6 +20,9 @@ player::player(string n){
 /*player::~player(){
     currentHand = nullptr;
 }*/
+hand* player::getCurrentHand(){
+    return this->currentHand;
+}
 
 string player::getName(){
     return this->name;
@@ -29,18 +32,23 @@ int player::viewMoney(){
     return this->money;
 }
 
-/*int player::numHands(){
-    return handV.size();
-}*/
+int player::viewBet(){
+    return this->bet;
+}
 
 void player::wonBet(){
-    this->money = this->bet*2;
+    this->money = this->money + this->bet * 2;
 }
 
 void player::placeBet(int amount){
     this->bet = 0;
     this->bet = amount;
     this->money -= amount;
+}
+void player::doubleDownBet(int amount){
+    this->bet = 0;
+    this->bet = amount;
+    this->money -= amount / 2;
 }
 
 void player::hit(deck* input){
@@ -53,7 +61,7 @@ void player::stand(){
 }
 
 void player::doubleDown(deck* input){
-this->placeBet(bet * 2);
+this->doubleDownBet(this->bet * 2);
 card* newCard = input->drawCard();
 currentHand->drawCardHand(newCard);
 // currentHand->drawCardHand(drawCard());
@@ -69,8 +77,9 @@ currentHand->drawCardHand(newCard);
 //next round
 }*/
 
-// void player::output(){
-//     cout << "Your cards in " << currentHand->viewHand();
-//     cout << "Your total value is: " << currentHand->getValueHand() << endl;
-//     cout << "You are betting: " << this->bet << endl;
-// }
+void player::output(){
+    cout << "Your cards in ";
+    currentHand->viewHand();
+    cout << "Your total value is: " << currentHand->getValueHand() << endl;
+    cout << "You are betting: " << this->bet << endl;
+}
