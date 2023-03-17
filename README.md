@@ -67,7 +67,14 @@
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > Instructions on installing and running your application
+ > - It will ask your name and user will reply with their name
+ > - There will be menu options of 1.View profile, 2.Win ratio, 3.Start game, and 4.Quit game and choose the number of your choice.
+ > - The program will then ask you how much you would like to bet. The user should reply with how much money they want to bet, then type confirm to continue.
+ > - Then the program will output the dealer's hand and your hand. Then you will have the options of your next move whether it is the 1.Hit 2. Stand 3. Double Down and
+ >   and choose one of these numbers
+ > - You will continue to choose one of these choices until the dealer has won, user has won, or there is a draw.
+ > - When you are at the menu, you may also choose 1 to view your profile name and money and choose 2 to see your win ratio.
+ > - When user wants to quit the game, user will choose 4 to quit the game.
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
