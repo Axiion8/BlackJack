@@ -12,5 +12,7 @@ TEST(dealerTest, dealerDrawTest){
     EXPECT_EQ(testDealer->getDealerHand()->getHandSize(), 1);
     delete testDeck;
     delete testDealer;
+    testDeck = nullptr;
+    testDealer = nullptr;
 }
 

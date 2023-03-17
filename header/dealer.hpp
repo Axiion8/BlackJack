@@ -15,7 +15,7 @@ class dealer {
 
     public:
     dealer();
-    // ~dealer();
+    ~dealer();
 
     void dealerDraw(deck* iCard);
     void dealerViewHand();

@@ -17,9 +17,11 @@ player::player(string n){
     this->currentHand = new hand();
 }
 
-/*player::~player(){
-    currentHand = nullptr;
-}*/
+player::~player(){
+    delete currentHand;
+    this->currentHand = nullptr;
+}
+
 hand* player::getCurrentHand(){
     return this->currentHand;
 }
