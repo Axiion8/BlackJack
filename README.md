@@ -67,7 +67,7 @@
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > - First, it will ask your name and user will reply with their name
+ > - First, the program will ask your name and user will reply with their name
  > - Then, there will be menu options of 1.View profile, 2.Win ratio, 3.Start game, and 4.Quit game and choose the number of your choice.
  > - If 2 was chosen (which is recommended for the first try), the program will then ask you how much you would like to bet. The user should reply with how much money 
  >   they want to bet, then type confirm to continue.
