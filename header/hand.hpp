@@ -12,8 +12,8 @@ class hand{
     bool aceHand;
     int numAces;
     //int bet;
-    
-    public:
+ 
+     public:
         hand();
         ~hand();
 
@@ -29,6 +29,7 @@ class hand{
         void clearHand(deck*);
         bool isEmpty();
         bool isAceHand();
+        int getHandSize();
 
 };
 
