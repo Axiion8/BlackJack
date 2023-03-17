@@ -75,5 +75,5 @@
  > - When you are at the menu, you may also choose 1 to view your profile name and money, choose 2 to see your win ratio, or choose 3 to start a new game.
  > - When user wants to quit the game, user will choose 4 to quit the game.
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+ > Our project was tested and validated with the googletest framework. In our test files, we would use the smoke testing methodology to ensure each of our functions were working as expected. Once we guaranteed there were no bugs in our class functions, we proceeded to Valgrind our final project to check for any potential memory leaks.
  
