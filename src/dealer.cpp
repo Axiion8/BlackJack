@@ -1,28 +1,25 @@
 #include "../header/dealer.hpp"
 
 dealer::dealer() {
-    this->dealerHandValue = 0;
-    this->aceHand = false;
-    this->numAces = 0;
+    this->dealerHand = new hand();
 }
 
-dealer::~dealer() {
-    dealerHand.~hand();
-    dealerHandValue = 0;
+// dealer::~dealer() {
+//     dealerHand.~hand();
+//     dealerHandValue = 0;
+// }
+
+void dealer::dealerDraw(deck* iCard) {
+    card* newCard = iCard->drawCard();
+    dealerHand->drawCardHand(newCard);
 }
 
-int dealer::getDealerHandValue(){
-    return this->dealerHandValue;
+void dealer::dealerViewHand() {
+    cout << "Dealer cards: ";
+    dealerHand->viewHand();
+    cout << "Dealer total value is: " << dealerHand->getValueHand() << endl;
 }
 
-void dealer::dealerDraw(card *iCard) {
-    dealerHand.drawCardHand(iCard);
-}
-
-void dealerViewHand() {
-    unsigned int i;
-    for (i = 0; i < dealerHand.handV; ++i) {
-        cout << "Your cards in " << dealerHand.handV->viewHand();
-        cout << "Your total value is: " << dealerHand.handV->getValueHand() << endl;
-    }
+hand* dealer::getDealerHand(){
+    return this->dealerHand;
 }
