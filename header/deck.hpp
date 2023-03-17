@@ -18,6 +18,7 @@ class deck{
         card* drawCard();
         void returnCard(card*);
         bool isEmpty()const;
+        int getDeckSize();
 };
 
 #endif

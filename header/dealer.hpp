@@ -9,11 +9,14 @@
 class dealer {
     private:
     hand dealerHand;
+    int numAces;
+    bool aceHand;
     int dealerHandValue;
 
     public:
     dealer();
     ~dealer();
+    int getDealerHandValue();
     void dealerDraw(card* iCard);
 
 };

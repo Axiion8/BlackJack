@@ -115,3 +115,8 @@ void deck::returnCard(card* input){
 bool deck::isEmpty() const{
     return deckV.empty();
 }
+
+int deck::getDeckSize(){
+    return deckV.size(); 
+}
+
