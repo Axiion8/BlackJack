@@ -15,7 +15,7 @@ void dealer::dealerDraw(deck* iCard) {
 }
 
 void dealer::dealerViewHand() {
-    cout << "Dealer cards: ";
+    cout << endl << "Dealer ";
     dealerHand->viewHand();
     cout << "Dealer total value is: " << dealerHand->getValueHand() << endl;
 }

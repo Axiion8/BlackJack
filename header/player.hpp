@@ -22,7 +22,7 @@ class player{
 
         string getName();
         int viewMoney();
-        int numHands();
+        //int numHands();
         void wonBet();
         void placeBet(int);
         void doubleDownBet(int);
