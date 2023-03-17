@@ -25,14 +25,16 @@ class player{
         int numHands();
         void wonBet();
         void placeBet(int);
-
+        void doubleDownBet(int);
+        int viewBet();
         void hit(deck*);
         void stand();
         void doubleDown(deck*);
         //void split();
         //void surrender();
-
+        hand* getCurrentHand();
         void output();
+
 };
 
 #endif
