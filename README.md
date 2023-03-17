@@ -65,7 +65,9 @@
  > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+ > ![ss 1](https://user-images.githubusercontent.com/84153224/226052553-c0f2761b-b74a-46fd-a614-068f399dc84e.jpg)
+ > ![ss 2](https://user-images.githubusercontent.com/84153224/226052598-9105f624-4cc3-45a2-92f2-b28dfbe3cfbc.jpg)
+ > ![ss 3](https://user-images.githubusercontent.com/84153224/226052612-59d78b63-6561-4612-b849-5c6767fcd49e.jpg)
  ## Installation/Usage
  > - First, the program will ask your name and user will reply with their name
  > - Then, there will be menu options of 1.View profile, 2.Win ratio, 3.Start game, and 4.Quit game and choose the number of your choice.
