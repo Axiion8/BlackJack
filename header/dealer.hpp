@@ -1,23 +1,25 @@
 #ifndef DEALER_HPP
 #define DEALER_HPP
 
-#include "hand.hpp"
 #include "card.hpp"
-#include <string>
+#include "deck.hpp"
+#include "hand.hpp"
+#include <iostream>
 #include <vector>
+#include <string>
+#include <algorithm>
 
 class dealer {
     private:
-    hand dealerHand;
-    int numAces;
-    bool aceHand;
-    int dealerHandValue;
+    hand* dealerHand;
 
     public:
     dealer();
-    ~dealer();
-    int getDealerHandValue();
-    void dealerDraw(card* iCard);
+    // ~dealer();
+
+    void dealerDraw(deck* iCard);
+    void dealerViewHand();
+    hand* getDealerHand();
 
 };
 
