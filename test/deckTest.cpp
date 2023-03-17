@@ -2,9 +2,9 @@
 #include "gmock/gmock.h"
 #include "../header/deck.hpp"
 
-// TEST(deckTest, deckConstrutorTest){
-//     EXPECT_NO_THROW(deck d);
-// }
+TEST(deckTest, deckConstrutorTest){
+    EXPECT_NO_THROW(deck d);
+}
 
 TEST(deckTest, generateDeckTest){
     deck* d = new deck();

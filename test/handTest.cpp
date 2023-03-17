@@ -2,9 +2,9 @@
 #include "gmock/gmock.h"
 #include "../header/hand.hpp"
 
-// TEST(handTest, ConstructorTest){
-//     EXPECT_NO_THROW(hand h);
-// }
+TEST(handTest, ConstructorTest){
+    EXPECT_NO_THROW(hand h);
+}
  
 TEST(handTest, DestructorTest){
     hand* h = new hand();
