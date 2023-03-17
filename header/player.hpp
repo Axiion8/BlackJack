@@ -18,7 +18,7 @@ class player{
     public:
         player();
         player(string);
-        //~player();
+        ~player();
 
         string getName();
         int viewMoney();

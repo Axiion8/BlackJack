@@ -145,6 +145,9 @@ int main(){
         optionDisplay();//reopens menu for while loop decision
         cin >> menuOptionInput;
     }
+    delete user;
+    delete host;
+    delete gameDeck;
 }
 
 

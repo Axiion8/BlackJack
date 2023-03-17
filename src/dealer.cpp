@@ -4,10 +4,10 @@ dealer::dealer() {
     this->dealerHand = new hand();
 }
 
-// dealer::~dealer() {
-//     dealerHand.~hand();
-//     dealerHandValue = 0;
-// }
+dealer::~dealer() {
+    delete dealerHand;
+    this->dealerHand = nullptr;
+}
 
 void dealer::dealerDraw(deck* iCard) {
     card* newCard = iCard->drawCard();
