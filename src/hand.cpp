@@ -16,9 +16,9 @@ hand::~hand(){
 
 bool hand::checkBustHand() {
     int handValue = 0;
-    for (auto c : this->handV) {
-        handValue += c->getValue();
-    }
+
+    handValue = this->getValueHand();
+
     return (handValue > 21);
 }
 
@@ -40,7 +40,7 @@ int hand::getValueHand() {
 
     for (unsigned int i = 0; i < handV.size(); i++) {
         int temp = handV.at(i)->getValue();
-        if (temp == 1) {
+        if (temp == 11) {
             numAces++;
         }
         value += temp;
@@ -87,4 +87,8 @@ bool hand::isEmpty(){
 
 bool hand::isAceHand(){
     return aceHand;
+}
+
+int hand::getHandSize(){
+    return handV.size();
 }
