@@ -80,6 +80,7 @@ currentHand->drawCardHand(newCard);
 }*/
 
 void player::output(){
+    cout << "------------------------------" << endl;
     cout << "Your cards in ";
     currentHand->viewHand();
     cout << "Your total value is: " << currentHand->getValueHand() << endl;

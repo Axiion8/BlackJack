@@ -63,7 +63,7 @@ void hand::drawCardHand(card* inputCard){
 }
 
 void hand::viewHand(){
-    cout << "Hand:" << endl;
+    cout << "hand:" << endl;
     for(unsigned int i = 0; i < handV.size(); ++i){
         cout << handV.at(i)->getSuit() << ' ' 
         << handV.at(i)->getName() 

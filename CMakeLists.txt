@@ -57,9 +57,24 @@ add_executable(playerTest
     src/player.cpp
     test/playerTest.cpp
 )
+add_executable(game
+    header/deck.hpp
+    header/card.hpp
+    header/hand.hpp
+    header/dealer.hpp
+    header/player.hpp
+    src/card.cpp
+    src/deck.cpp
+    src/hand.cpp
+    src/dealer.cpp
+    src/player.cpp
+    src/main.cpp
+)
+
 #links
 target_link_libraries(cardTest gmock gtest gtest_main)
 target_link_libraries(deckTest gmock gtest gtest_main)
 target_link_libraries(handTest gmock gtest gtest_main)
 target_link_libraries(dealerTest gmock gtest gtest_main)
 target_link_libraries(playerTest gmock gtest gtest_main)
+target_link_libraries(game gmock gtest gtest_main)
