@@ -36,6 +36,7 @@ TEST(deckTest, ReturnCardTest) {
     card* c = new card(1, "Ace", "Clubs", true);
     d.returnCard(c);
     EXPECT_EQ(d.getDeckSize(), 313);
+    //delete c;
 }
 
 TEST(deckTest, isEmpty) {
@@ -52,4 +53,5 @@ TEST(deckTest, drawsCard) {
     card* testCard = testDeck.drawCard();
     EXPECT_NE(testCard, nullptr); 
     EXPECT_EQ(testDeck.getDeckSize(), 6 * 52 - 1);
+    delete testCard;
 }
