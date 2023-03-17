@@ -56,10 +56,6 @@ TEST(handTest, isAceHandTest){
     card* c = new card(2, "Two", "Diamonds", false);
     h->drawCardHand(c);
     EXPECT_EQ(h->isAceHand(), false);
-    delete h;
-    h = nullptr;
-    delete c;
-    c = nullptr;
 }
 
 TEST(handTest, isAceHandTest2){
@@ -76,10 +72,6 @@ TEST(handTest, clearHandTest){
     card* c = new card(1, "Ace", "Clubs", true);
     h->drawCardHand(c);
     EXPECT_EQ(h->isAceHand(), true);
-    delete h;
-    h = nullptr;
-    delete c;
-    c = nullptr;
 }
 
 TEST(HandTest, ClearHandTest) {
