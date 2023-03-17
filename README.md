@@ -62,7 +62,7 @@
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > In order to install the BlackJack game you would need first `git clone` the respository to get all the files. After git clone, run `git pull origin master` in order to have the files in your local computer. Then run `cmake .` and `make` in order to get the CMakeFiles. Finally, to start the game run the executable './bin/game' to start playing BlackJack.
+ > In order to install the BlackJack game you would need first `git clone` the respository to get all the files. After git clone, run `git pull origin master` in order to have the files in your local computer. Then run `cmake .` and `make` in order to get the CMakeFiles. Finally, to start the game run the executable `./bin/game` to start playing BlackJack.
  > - First, the program will ask your name and user will reply with their name
  > - Then, there will be menu options of 1.View profile, 2.Win ratio, 3.Start game, and 4.Quit game and choose the number of your choice.
  > - If 2 was chosen (which is recommended for the first try), the program will then ask you how much you would like to bet. The user should reply with how much money 
