@@ -44,10 +44,6 @@ TEST(deckTest, ReturnCardTest) {
     card* c = new card(1, "Ace", "Clubs", true);
     d->returnCard(c);
     EXPECT_EQ(d->getDeckSize(), 313);
-    delete c;
-    delete d;
-    c = nullptr;
-    d = nullptr;
 }
 
 TEST(deckTest, isEmpty) {
