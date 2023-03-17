@@ -28,6 +28,8 @@ TEST(playerTest, playerHit){
     player* testPlayer = new player();
     testPlayer->hit(testDeck);
     EXPECT_EQ(testPlayer->getCurrentHand()->getHandSize(), 1);
+    delete testDeck;
+    delete testPlayer;
 }
 
 TEST(playerTest, wonBetTest){

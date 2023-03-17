@@ -3,13 +3,14 @@
 #include "../header/dealer.hpp"
 
 TEST(dealerTest, dealerConstructorTest){
-    dealer d; 
-    EXPECT_EQ(d.getDealerHandValue(), 0);
+    EXPECT_NO_THROW(dealer d);
+}
+TEST(dealerTest, dealerDrawTest){
+    deck* testDeck = new deck();
+    dealer* testDealer = new dealer();
+    testDealer->dealerDraw(testDeck);
+    EXPECT_EQ(testDealer->getDealerHand()->getHandSize(), 1);
+    delete testDeck;
+    delete testDealer;
 }
 
-// TEST(dealerTest, dealerDestructorTest){
-//     dealer d;
-//     d.dealerDraw(new card(11, "Ace", "Diamonds", true ));
-//     d.dealerDraw(new card(10, "Ten", "Spades", false ));
-//     EXPECT_EQ(d.getDealerHandValue(), 1);
-// }
