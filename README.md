@@ -19,32 +19,45 @@
  > * int getValue() returns the cardValue
  > * string getName() returns the name
  > * string getSuit() returns the suit
+ > * bool getAce() returns true cardAce
  > 
  > Deck Class:
  > * void generateDeck() generates a vector with 52 Card object
  > * void shuffleDeck() mixes up order the of the vector
+ > * card* drawCard() returns a removed card from vector
+ > * void returnCard(card*) returns a card back to the vector
+ > * bool isEmpty() const return false if empty
+ > * int getDeckSize() returns the size of the vector
  > 
  > Hand Class:
  > * bool checkBustHand() returns true if handValue is larger than 21
  > * bool checkJackHand() returns true if hadnValue is equals to 21 
  > * int getValueHand() returns handValue
- > * void drawCardHand() prints out what card the user draws
- > * string viewHand() let player see his cards
- > * void clearHand() clears the Hand<>
+ > * void drawCardHand(card*) prints out what card the user draws
+ > * void viewHand() let player see his cards
+ > * void clearHand(card*) clears the Hand<>
+ > * bool isEmpty() returns false if empty
+ > * bool isAceHand() returns aceHand
+ > * int getHandSize() returns the size of the vector
  > 
  > Dealer Class:
  > * void dealerDraw() calls drawCardHand()
+ > * void dealerViewHand() couts Dealer's cards
+ > * hand* getDealerHand() returns dealerHand
  > 
  > Player Class:
  > * string getName() returns name
  > * int viewMoney() returns money
- > * int howManyHands() returns the number of hands
- > * void wonBet() doubles the bet and return's it to the player's money integer
- > * void hit() calls drawCardHand()
+ > * void wonBet() adds player's placed and won bets back to money
+ > * void placeBet(int) deducts the amount of bet placed from money
+ > * void doubleDownBet(int) deducts twice the amount of bet placed from money
+ > * int viewBet() return bet
+ > * void hit(deck*) calls drawCardHand()
  > * void stand() ends round, dealer's turn
- > * void doubleDown() double the bet, hit once and stand
- > * void splitHands() creates one more hand
- > * void surrender() give up half of the bet and lose game
+ > * void doubleDown(deck*) double the bet, hit once and stand
+ > * void drawBet() adds the player's placed bet back to money
+ > * hand* getCurrentHand() returns currentHand
+ > * void output() couts Player's deck of cards and amount of bet placed
 
 ## Class Diagram
  > ![uml](https://user-images.githubusercontent.com/110501128/222856648-8de8d71b-d211-432f-b11d-1517cb55bf24.png)
