@@ -48,6 +48,7 @@ TEST(handTest, isAceHandTest){
     card* c = new card(2, "Two", "Diamonds", false);
     h.drawCardHand(c);
     EXPECT_EQ(h.isAceHand(), false);
+    //delete c;
 }
 
 TEST(handTest, isAceHandTest2){
@@ -55,6 +56,7 @@ TEST(handTest, isAceHandTest2){
     card* c = new card(1, "Ace", "Clubs", true);
     h.drawCardHand(c);
     EXPECT_EQ(h.isAceHand(), true);
+    //delete c;
 }
 
 TEST(handTest, clearHandTest){
@@ -62,6 +64,7 @@ TEST(handTest, clearHandTest){
     card* c = new card(1, "Ace", "Clubs", true);
     h.drawCardHand(c);
     EXPECT_EQ(h.isAceHand(), true);
+    //delete c;
 }
 
 TEST(HandTest, ClearHandTest) {
