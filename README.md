@@ -58,6 +58,8 @@
 
  
  > ## Final deliverable
+ > ## Updated Class Diagram
+ > ![4uml](https://user-images.githubusercontent.com/110501128/226063138-d7ab2045-1d80-4506-944d-2ca687c8b022.png)
  
  ## Screenshots
  > ![ss 1](https://user-images.githubusercontent.com/84153224/226052553-c0f2761b-b74a-46fd-a614-068f399dc84e.jpg)
