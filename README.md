@@ -73,6 +73,8 @@
  >   they want to bet, then type confirm to continue.
  > - Then the program will output the dealer's hand and your hand. Then you will have the options of your next move whether it is the 1.Hit 2. Stand 3. Double Down and
  >   and choose one of these numbers
+ >   *Note: Hit is to get a card, Stand is to hold your total and end your current turn, Double Down is to double the bet after receiving one card(hit) and then 
+ >   Stand*
  > - You will continue to choose one of these choices until the dealer has won, user has won, or there is a draw, then program will move user to menu.
  > - When you are at the menu, you may also choose 1 to view your profile name and money, choose 2 to see your win ratio, or choose 3 to start a new game.
  > - When user wants to quit the game, user will choose 4 to quit the game.
