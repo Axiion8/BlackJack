@@ -35,7 +35,9 @@ int player::viewMoney(){
 int player::viewBet(){
     return this->bet;
 }
-
+void player::drawBet(){
+    this->money = this->money + this->bet;
+}
 void player::wonBet(){
     this->money = this->money + this->bet * 2;
 }
